@@ -1,0 +1,55 @@
+{
+  "name": "animal-avatar/animal-avatar-generator",
+  "description": "Generate deterministic animal SVG avatars from string seeds (PHP + Laravel)",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "avatar",
+    "svg",
+    "laravel",
+    "packagist",
+    "generator"
+  ],
+  "authors": [
+    {
+      "name": "Khojiakbar Solijonov"
+    }
+  ],
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^10.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "AnimalAvatar\\": "src/"
+    },
+    "files": [
+      "src/functions.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "AnimalAvatar\\Tests\\": "tests/"
+    }
+  },
+  "suggest": {
+    "illuminate/support": "Required for Laravel service provider and facade integration."
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "AnimalAvatar\\Laravel\\AnimalAvatarServiceProvider"
+      ],
+      "aliases": {
+        "AnimalAvatar": "AnimalAvatar\\Laravel\\Facades\\AnimalAvatar"
+      }
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}
