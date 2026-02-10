@@ -62,13 +62,6 @@ composer install
 vendor/bin/phpunit
 ```
 
-## Публикация в Packagist
-
-1. Залейте репозиторий в GitHub.
-2. Поменяйте поле `name` в `composer.json` на ваш vendor/package (например `your-vendor/animal-avatar-generator`).
-3. Добавьте репозиторий в [Packagist](https://packagist.org/packages/submit).
-4. Настройте GitHub hook для автообновлений версий.
-
 ## Лицензия
 
 MIT
